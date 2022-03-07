@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCake</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #fbb3fb;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(226, 111, 207);
+        }
+        nav {
+            float: left;
+            width: 40%;
+            height: 950px;
+            background: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-color: #f1f1f1;
+            height: 950px;
+            text-align: center;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer {
+            background-color: rgb(208, 100, 223);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-left{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./Imagenes/Logo - copia.PNG" alt="Logo" width="100%">   
+    </header>
+    
+    <div class="text-center">
+        <h1>Elige tus pasteles favoritos o personaliza el tuyo</h1>
+    </div><hr>
+
+    <section>
+        <nav>
+            <h2>Pasteles predeterminados y más populares</h2>
+            <div class="text-center">
+                <img src="./Imagenes/Imagen1.jpg" alt="vainilla" width="250px">
+                <h4>Pastel de vainilla a $30.00</h4>
+            </div><br><br><br>
+            <div class="text-center">
+                <img src="./Imagenes/Imagen2.jpg" alt="chocolate" width="250px">
+                <h4>Pastel de chocolate a $30.00</h4>
+            </div><br><br><br>
+            <div class="text-center">
+                <img src="./Imagenes/Imagen3.jpg" alt="nuez" width="250px">
+                <h4>Pastel de Nuez a $55.00</h4>
+            </div>
+        </nav>
+
+        <article>
+            <h1>Los mejores pasteles personalizados</h1>
+            <p>Puedes elegir tus pasteles con diferentes tipos de adornos y sabores, y aún mejor, te damos la opción de contactarnos para que 
+            puedas obtener un pastel totalmente personalizado. Cada uno de los pasteles son de 1.5 Kg.</p>
+
+            <div class="text-left">
+                <h3>Sabores</h3>
+                <ul>
+                    <li>Chocolate
+                        <ul>
+                            <li>Ferrero................................................... $200</li>
+                            <li>Cacao.................................................... $150</li>
+                            <li>Moka...................................................... $170</li>
+                        </ul>
+                    </li>
+                    <li>Fresa............................................................... $200</li>
+                    <li>Limón............................................................... $250</li>
+                </ul><br>
+                <h3>Relleno</h3>
+                <ul>
+                    <li>Mermelada
+                        <ul>
+                            <li>Fresa...................................................... $50</li>
+                            <li>Piña......................................................... $50</li>
+                            <li>Sandía.................................................... $50</li>
+                            <li>Mango..................................................... $80</li>
+                            <li>Durazno................................................... $80</li>
+                        </ul>
+                    </li>
+                    <li>Chocolate
+                        <ul>
+                            <li>Nutela.................................................... $80</li>
+                            <li> Con nuez................................................. $80</li>
+                        </ul>
+                    </li>
+                    <li>Fruta de amibar
+                        <ul>
+                            <li>Durazno................................................... $50</li>
+                            <li>Piña........................................................ $50</li>
+                            <li>Mango..................................................... $50</li>
+                            <li>Cereza.................................................... $50</li>
+                            <li>Fresa...................................................... $50</li>
+                        </ul>
+                    </li>
+                </ul><br>
+                <h3>Cubierta</h3>
+                <ul>
+                    <li>Glaseado.......................................................... $20</li>
+                    <li>Fondant............................................................ $25</li>
+                </ul>
+            </div>
+
+            <br><br><a href="./pedidos.html"> 
+                <input type="button" value="Hacer pedido" style="background-color: rgb(240, 193, 136); border-color: rgb(163, 56, 56); color: #e40de4;">
+            </a>
+            <a href="./pastelero.html"> 
+                <input type="button" value="Ingresar como Pastelero" style="background-color: rgb(240, 193, 136); border-color: rgb(163, 56, 56); color: #e40de4;">
+            </a>
+        </article>
+    </section>
+
+    <footer>
+        <div class="text-left">
+            <a href="https://www.facebook.com" target="blanck"><img src="./Imagenes/Face.png" alt="Facebook" width="20px"></a>
+            <a href="https://www.instagram.com" target="blanck"><img src="./Imagenes/Ins.png" alt="instagram" width="20px"></a>
+            <a href="https://www.pinterest.com" target="blanck"><img src="./Imagenes/Pir.png" alt="pinterest" width="20px"></a>
+            <a href="https://www.twitter.com" target="blanck"><img src="./Imagenes/Tww.png" alt="twitter" width="20px"></a>
+            <p>Horarios:</p>
+            <dt>lunes a viernes: 10:00 hrs - 20:00 hrs.</dt>
+            <dt>Sabados y domingos: 09:00 hrs. - 14:00 hrs.</dt>
+        </div>
+
+        <p>Contáctanos: MyCake@gmail.com</p>
+        <p>Ubicación: avenida juarez #156, alameda, s.l.p </p>
+        <p>Teléfono: 485-154-5478</p>
+    </footer>
+</body>
+</html>

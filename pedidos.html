@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCake - Pedido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: #fbb3fb;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            color: rgb(226, 111, 207);
+        }
+        footer {
+            background-color: rgb(208, 100, 223);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-left{
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./Imagenes/Logo - copia.PNG" alt="Logo" width="100%">   
+    </header>
+    
+    <div class="text-center">
+        <h1>¡Ordena tú pedido personalizado!</h1>
+    </div><hr>
+
+    <div class="text-center">
+        <form action="/accion.js" id="form1" method="post">
+            <H3>Cantidad de pasteles</H3>
+            <label for="number">Elige una cantidad (máximo 20 unidades)</label><br>
+            <input type="number" id="number" name="number" min="1" max="20"><br><br>
+
+            <h3>Sabor de los pasteles</h3>
+            <label for="sabor">Elige el sabor del pastel</label><br>
+            <input list="sabor">
+            <datalist id="sabor">
+                <option value="Chocolate Ferrero">
+                <option value="Chocolate Cacao">
+                <option value="Moka">
+                <option value="Fresa">
+                <option value="Limón">
+            </datalist><br><br>
+
+            <h3>Relleno de los pasteles</h3>
+            <label for="relleno">Elige el relleno de tú pastel</label><br>
+            <input list="relleno">
+            <datalist id="relleno">
+                <option value="Relleno de mermelada de fresa">
+                <option value="Relleno de mermelada de piña">
+                <option value="Relleno de mermelada de sandía">
+                <option value="Relleno de mermelada de mango">
+                <option value="Relleno de mermelada de durazno">
+                <option value="Relleno de nutela">
+                <option value="Relleno de chocolate con nuez">
+                <option value="Relleno con durazno">
+                <option value="Relleno con piña">
+                <option value="Relleno con mango">
+                <option value="Relleno con cereza">
+                <option value="Relleno con fresa">
+            </datalist><br><br>
+
+            <h3>Selecciona el tipo de cubierta</h3>
+            <input type="radio" id="glaseado" name="cubierta" value="Glaseado">
+            <label for="roja">Glaseado</label><br>
+            <input type="radio" id="fondant" name="cubierta" value="Fondant">
+            <label for="verde">Fondant</label><br><br>
+
+            <h3>Ingresa 3 colores de prefencia para pastel</h3>
+            <input type="color" id="color1" name="color1">
+            <input type="color" id="color1" name="color1">
+            <input type="color" id="color1" name="color1"><br><br>
+
+            <h3>Fecha de entrega</h3>
+            <input type="datetime-local" id="fecha1" name="fecha1"><br><br>
+
+            <h3>Escribe las características del pastel</h3>
+            <label for="descrip" class="form-label">Describenos tu pastel (Puedes alargar el recuadro seleccionando la parte inferior derecha)</label><br>
+            <textarea class="form-control" id="descrip" rows="2"></textarea><br><br><br>
+
+            <hr>
+
+            <h1>Información personal</h1>
+            <label for="nombre">Escribe tú nombre: </label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="tel1">Número de Teléfono: </label>
+            <input type="tel" name="tel1" id="tel1" maxlength="10">
+            <label for="correo1">Ingresa tú correo</label>
+            <input type="email" id="correo1" name="correo1">
+            <label for="domicilio">Dirección del domicilio: </label>
+            <input type="text" id="domicilio" name="domicilio"> <br><br><br><br>
+            <input type="submit" value="Enviar Pedido">
+            <input type="reset">
+        </form>
+    </div><br><br><br>
+
+    <div class="text-center">
+        <a href="./Inicio Pastel.html"> 
+            <input type="button" value="Regresar al Inicio">
+        </a>
+    </div><br><br><br>
+
+    <footer>
+        <div class="text-left">
+            <a href="https://www.facebook.com" target="blanck"><img src="./Imagenes/Face.png" alt="Facebook" width="20px"></a>
+            <a href="https://www.instagram.com" target="blanck"><img src="./Imagenes/Ins.png" alt="instagram" width="20px"></a>
+            <a href="https://www.pinterest.com" target="blanck"><img src="./Imagenes/Pir.png" alt="pinterest" width="20px"></a>
+            <a href="https://www.twitter.com" target="blanck"><img src="./Imagenes/Tww.png" alt="twitter" width="20px"></a>
+            <p>Horarios:</p>
+            <dt>lunes a viernes: 10:00 hrs - 20:00 hrs.</dt>
+            <dt>Sabados y domingos: 09:00 hrs. - 14:00 hrs.</dt>
+        </div>
+
+        <p>Contáctanos: MyCake@gmail.com</p>
+        <p>Ubicación: avenida juarez #156, alameda, s.l.p </p>
+        <p>Teléfono: 485-154-5478</p>
+    </footer>
+</body>
+</html>

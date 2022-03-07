@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCake - Pastelero</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav {
+            float: left;
+            width: 50%;
+            height: 420px;
+            background: #ccc;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 50%;
+            background-color: #ccc;
+            height: 420px;
+            text-align: center;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: rgb(208, 100, 223);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-left{
+            text-align: left;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        table, th, td{
+            border: solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-center">
+        <h1>BIENVENIDO PASTELERO</h1>
+    </div><hr>
+
+    <section>
+        <nav>
+            <table style="margin: 0 auto;">
+                <caption>Sabores</caption>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Unidades en existencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chocolate Ferrero</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate de cacao</td>
+                        <td>20 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Moka</td>
+                        <td>20 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Fresa</td>
+                        <td>22 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Limón</td>
+                        <td>32 kg</td>
+                    </tr>
+                </tbody>
+            </table><br><br><br>
+            <table style="margin: 0 auto;">
+                <caption>Cubierta</caption>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Unidades en existencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Glaseado</td>
+                        <td>100 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Fondant</td>
+                        <td>58 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </nav>
+
+        <article>
+            <table style="margin: 0 auto;">
+                <caption>Rellenos</caption>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Unidades en existencia</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mermelada de fresa</td>
+                        <td>45 L</td>
+                    </tr>
+                    <tr>
+                        <td>Mermelada de piña</td>
+                        <td>20 L</td>
+                    </tr>
+                    <tr>
+                        <td>Mermelada de sandía</td>
+                        <td>23 L</td>
+                    </tr>
+                    <tr>
+                        <td>Mermelada de mango</td>
+                        <td>22 L</td>
+                    </tr>
+                    <tr>
+                        <td>Mermelada de durazno</td>
+                        <td>32 L</td>
+                    </tr>
+                    <tr>
+                        <td>Nutela</td>
+                        <td>35 L</td>
+                    </tr>
+                    <tr>
+                        <td>Chocolate con nuez</td>
+                        <td>41 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Durazno</td>
+                        <td>15 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Piña</td>
+                        <td>3 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Mango</td>
+                        <td>30 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Cereza</td>
+                        <td>10 kg</td>
+                    </tr>
+                    <tr>
+                        <td>Fresa</td>
+                        <td>16 kg</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+    </section><hr><br>
+
+    <div style="text-align: center;">
+        <table style="margin: 0 auto;">
+            <caption>PEDIDOS DE CLIENTES</caption>
+            <thead>
+                <tr>
+                    <th>Nombre del cliente</th>
+                    <th>Número</th>
+                    <th>Cantidad</th>
+                    <th>Sabor</th>
+                    <th>Relleno</th>
+                    <th>Cubierta</th>
+                    <th>Colores</th>
+                    <th>Fecha de entrega</th>
+                    <th>Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>josé emanule morales gonzales</td>
+                    <td>4741646941</td>
+                    <td>1</td>
+                    <td>Chocolate Ferrero</td>
+                    <td>Fresa</td>
+                    <td>Glaseado</td>
+                    <td>Rojo, rosa, blanco</td>
+                    <td>15/07/2022, 15:00 hrs.</td>
+                    <td>Boda</td>
+                </tr>
+                <tr>
+                    <td>Bernardo Meléndez Perez</td>
+                    <td>4334587412</td>
+                    <td>1</td>
+                    <td>Fresa</td>
+                    <td>Durazno</td>
+                    <td>Glaseado</td>
+                    <td>Amarillo, verde, Blanco</td>
+                    <td>21/04/2022, 18:30 hrs.</td>
+                    <td>Cumpleaños</td>
+                </tr>
+                <tr>
+                    <td>Héctor Gabriel Martinez Barcenas</td>
+                    <td>4445847121</td>
+                    <td>2</td>
+                    <td>Limón</td>
+                    <td>Durazno</td>
+                    <td>Fondant</td>
+                    <td>Rosa, Azul, Blanco</td>
+                    <td>11/05/2022, 13:45 hrs.</td>
+                    <td>Cumpleaños de un niña con temática de cenicienta</td>
+                </tr>
+                <tr>
+                    <td>Fernanda Reyes Torres</td>
+                    <td>4851254158</td>
+                    <td>1</td>
+                    <td>Chocolate Ferrero</td>
+                    <td>Mango</td>
+                    <td>Glaseado</td>
+                    <td>Rojo, Blanco, blanco</td>
+                    <td>29/11/2022, 15:00 hrs.</td>
+                    <td>Para fiensta de 18 años</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <br><hr><br>
+
+    <div class="text-center">
+        <a href="./Inicio Pastel.html" target="blanck"> 
+            <input type="button" value="Regresar al inicio de la página" style="background-color: rgb(240, 193, 136); border-color: rgb(163, 56, 56); color: #e40de4;">
+        </a>
+    </div><br><br><br>
+
+    <footer>
+        <div class="text-left">
+            <a href="https://www.facebook.com" target="blanck"><img src="./Imagenes/Face.png" alt="Facebook" width="20px"></a>
+            <a href="https://www.instagram.com" target="blanck"><img src="./Imagenes/Ins.png" alt="instagram" width="20px"></a>
+            <a href="https://www.pinterest.com" target="blanck"><img src="./Imagenes/Pir.png" alt="pinterest" width="20px"></a>
+            <a href="https://www.twitter.com" target="blanck"><img src="./Imagenes/Tww.png" alt="twitter" width="20px"></a>
+
+            <p>Horarios:</p>
+            <dt>lunes a viernes: 10:00 hrs - 20:00 hrs.</dt>
+            <dt>Sabados y domingos: 09:00 hrs. - 14:00 hrs.</dt>
+        </div>
+    </footer>
+</body>
+</html>
